@@ -14,7 +14,7 @@ class DataBaseConnect
         $host = "localhost";
         $name = "db_prova";
         $user = "root";
-        $password = "Raminbr90";
+        $password = "Passoword";
 
         try {
             $connect= new PDO('mysql:host=' . $host . ';dbname=' . $name, $user,$password);
