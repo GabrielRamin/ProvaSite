@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+* 
+    {
+    padding: 0rem;
+    margin: 0rem;
+    box-sizing: border-box;
+    }
+
+    :root
+    {
+    font-size: 62.5%;
+    --nav-bg-color: #222535;
+    --nav-text-color: rgb(0, 0, 0);
+    --button-bg-color: #222535;
+    --button-text-color: white;
+    --body-bg-color: white;
+    --bar-b-color:#169EEB;
+    --bar-h-color:#222535;
+    }
+    
+    body
+    {
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    } 
+
+    .logo
+    {
+    height:8.5rem ;
+    width: 10rem;   
+    border-radius: 0.4rem; 
+    margin-top: 0.5rem;
+    }
+
+    nav
+    {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 0 2.4rem;
+    height: 10rem;
+    }
+
+    .navbar-custom 
+    {
+    background-color: #ffffff;
+    }
+
+    .titulo
+    {
+        font-size: 5rem;
+        text-align: center;
+    }
+
+    .texto1
+    {
+        text-align: center;
+        font-size: 3rem;
+
+    }
+
+    #carouselExample {
+        max-width: 500px; 
+        margin: 0 auto; 
+      }
+  
+      #carouselExample .carousel-item img {
+        max-height: 300px; 
+      }
+
+      .texto2
+      {
+        text-align: center;
+        font-size: 4rem;
+
+
+      }
+
+      .property-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      .property-card1{
+        margin-top: 20px;
+        margin-left: 25%;
+        margin-right: 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+      }
+
+      .property-card {
+        margin-bottom: 20px; 
+        margin-left: 25%;
+        margin-right: 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+      }
+
+      footer 
+      {
+        background-color: var(--nav-bg-color);
+        padding: 20px 0;
+        text-align: center;
+        font-size: 1rem;
+        color: #ffffff;
+        width: 100%;
+        bottom: 0;
+      }

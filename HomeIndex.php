@@ -1,182 +1,132 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
+
 <head>
-  <title>Menu Example</title>
-  <style>
-    /* CSS for the menu */
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-    }
-    
-    .menu-container {
-      display: flex;
-    }
-    
-    .primary-menu {
-      background-color: deepskyblue;
-      height: 50px;
-      flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 20px;
-      border-radius: 10px;
-    }
-    
-    .logo {
-      display: flex;
-      align-items: center;
-      cursor: pointer;
-    }
-    
-    .logo img {
-      width: 30px;
-      margin-right: 10px;
-    }
-    
-    .user {
-      display: flex;
-      align-items: center;
-      cursor: pointer;
-      position: relative;
-    }
-    
-    .user img {
-      width: 20px;
-      margin-right: 5px;
-    }
-    
-    /* CSS for notifications */
-    .notification {
-      position: relative;
-      display: inline-block;
-      cursor: pointer;
-    }
-    
-    .notification-badge {
-      position: absolute;
-      top: -5px;
-      right: -5px;
-      background-color: red;
-      color: white;
-      font-size: 12px;
-      padding: 2px 5px;
-      border-radius: 50%;
-    }
-    
-    /* CSS for dropdown menus */
-    .dropdown-menu {
-      position: absolute;
-      top: 100%;
-      right: 0;
-      background-color: white;
-      border: 1px solid gray;
-      padding: 10px;
-      display: none;
-      border-radius: 10px;
-    }
-    
-    .dropdown-menu a {
-      display: block;
-      padding: 5px;
-      text-decoration: none;
-      color: black;
-    }
-    
-    .user-dropdown-menu {
-      position: absolute;
-      top: 100%;
-      right: 0;
-      background-color: white;
-      border: 1px solid gray;
-      padding: 10px;
-      display: none;
-      border-radius: 10px;
-    }
-    
-    .user-dropdown-menu a {
-      display: block;
-      padding: 5px;
-      text-decoration: none;
-      color: black;
-    }
-    
-    .show {
-      display: block;
-    }
-
-    /* CSS for secondary menu */
-    .secondary-menu {
-      background-color: lightgray;
-      width: 200px;
-      padding: 20px;
-      margin-top: 10px;
-      border-radius: 10px;
-      font-family: "Arial", sans-serif;
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      top: 50px;
-      height: calc(100% - 50px);
-    }
-
-    .secondary-menu a {
-      display: block;
-      padding: 10px;
-      margin-bottom: 10px;
-      text-decoration: none;
-      color: black;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ImobiCenter - Inicio</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./styles/index.css">
 </head>
+
 <body>
-  <div class="menu-container">
-    <div class="primary-menu">
-      <div class="logo" onclick="goToHomePage()">
-        <img src="logo.png" alt="Logo">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img class="logo" src="./Fotos/Fotos/ImobiCenterImg.png" alt="Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="./CadastrarCasa/CadastroCasa.php">CADASTRAR CASA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./CadastrarCasa/ProssVisu.php">CASAS CADASTRADAS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./CadastrarUsuario/index.php">CADASTRAR USUARIO</a>
+          </li>
+        
+        </ul>
       </div>
-      <div class="user" onclick="toggleUserDropdownMenu(event)">
-        <div class="notification" onclick="toggleDropdownMenu(event)">
-          <img src="bell.png" alt="Notifications">
-          <span class="notification-badge">1</span>
-          <div class="dropdown-menu">
-            <a href="#">Option 1</a>
-            <a href="#">Option 2</a>
-            <a href="#">Option 3</a>
+      <div class="ml-auto">
+        <a href="./Login/login.php"><button class="btn btn-secondary" type="button" >LOGOUT</button></a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-4">
+    <h1 class="titulo">Bem-vindo ao ImobiCenter</h1>
+    <p class="texto1">Temos certeza de que encontrará o imóvel dos sonhos!</p>
+    <div class="row">
+
+      <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="3000">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExample" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExample" data-slide-to="1"></li>
+          <li data-target="#carouselExample" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./Fotos/Fotos/casa1.png" class="d-block w-100" alt="Imagem 1 do Carousel">
+            <div class="carousel-caption">              
+              
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./Fotos/Fotos/casa2.png" class="d-block w-100" alt="Imagem 2 do Carousel">
+            <div class="carousel-caption">              
+              
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./Fotos/Fotos/casa3.png" class="d-block w-100" alt="Imagem 3 do Carousel">
+            <div class="carousel-caption">              
+              
+            </div>
           </div>
         </div>
-        <span>Name of User</span>
-        <div class="user-dropdown-menu">
-          <a href="#">Logout</a>
+        <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Próximo</span>
+        </a>
+        
+      </div>
+
+      
+      
+        <div class="property-card1">
+          <p class="texto2">Veja algumas casas em destaque:</p>
+          <div class="card">
+            <img src="./Fotos/Fotos/casa1.png" class="card-img-top" alt="Casa 1">
+            <div class="card-body">
+              <h5 class="card-title">Imóvel 1</h5>
+              <p class="card-text">Descrição do imóvel.</p>
+              <a href="#" class="btn btn-primary">Ver detalhes</a>
+            </div>
+          </div>
+        </div>
+        <div class="property-card">
+          <div class="card">
+            <img src="./Fotos/Fotos/casa2.png" class="card-img-top" alt="Casa 2">
+            <div class="card-body">
+              <h5 class="card-title">Imóvel 2</h5>
+              <p class="card-text">Descrição do imóvel.</p>
+              <a href="#" class="btn btn-primary">Ver detalhes</a>
+            </div>
+          </div>
+        </div>
+        <div class="property-card">
+          <div class="card">
+            <img src="./Fotos/Fotos/casa3.png" class="card-img-top" alt="Casa 3">
+            <div class="card-body">
+              <h5 class="card-title">Imóvel 3</h5>
+              <p class="card-text">Descrição do imóvel.</p>
+              <a href="#" class="btn btn-primary">Ver detalhes</a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="secondary-menu">
-        <a href="./CadastrarCasa/CadastroCasa.php">CADASTRAR CASA</a>
-        <a href="./CadastrarCasa/ProssVisu.php">VISUALIZAR CASA</a>
-        <a href="./CadastrarUsuario/index.php">CADASTRO USUARIO</a>
-    </div>
+
+  
+
+  <footer>
+    <div class="container">
+    <p>&copy; 2023 ImobiCenter. Todos os direitos reservados.</p>
   </div>
+  </footer>
+  
 
-  <script>
-    function goToHomePage() {
-      // Redirect to homepage
-      window.location.href = "homepage.html";
-    }
-
-    function toggleDropdownMenu(event) {
-      // Toggle the dropdown menu
-      const dropdownMenu = event.currentTarget.querySelector(".dropdown-menu");
-      dropdownMenu.classList.toggle("show");
-    }
-
-    function toggleUserDropdownMenu(event) {
-      // Toggle the user dropdown menu
-      const userDropdownMenu = event.currentTarget.querySelector(".user-dropdown-menu");
-      userDropdownMenu.classList.toggle("show");
-    }
-  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>

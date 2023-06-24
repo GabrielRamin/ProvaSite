@@ -21,12 +21,14 @@ $listaUsuarios = $usuariosRegras->obterUsuarios();
         <button id="myButton" type="submit">Salvar</button>
         <p id="message"></p>
     </form>
-        <script>
+    <script>
             var button = document.getElementById('myButton');
             var message = document.getElementById('message');
+            var counter = 5;
 
-            button.addEventListener('click', function() {
-            message.textContent = 'Usuário Cadastrado com Sucesso';
+            button.addEventListener('click', function(ev) {
+                alert("Usuario Cadastrado com sucesso")
             });
     </script>
+        
 </div>
